@@ -4,6 +4,8 @@
     {
         public function __construct()
         {
+            // load the example Post model
+            $this->postModel = $this->model('Post');
         }
 
         // Pages is the default controller and index is the default method
@@ -18,12 +20,10 @@
 
         public function about()
         {
-
             $data = [
                 'title' => 'About Us',
             ];
 
             $this->view('pages/about', $data);
-
         }
     }
