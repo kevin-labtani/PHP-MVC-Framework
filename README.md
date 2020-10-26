@@ -4,5 +4,5 @@ This framework works by routing everything through the index.php file by using .
 
 ## To Use
 
-Complete your config in app/config/config.php
-Change the RewriteBase to your folder in /public/.htaccess
+- Complete your config in app/config/config.php  
+- Change the RewriteBase to your folder in /public/.htaccess
