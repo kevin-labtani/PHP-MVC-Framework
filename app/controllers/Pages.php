@@ -11,8 +11,11 @@
         // Pages is the default controller and index is the default method
         public function index()
         {
+            $posts = $this->postModel->getPosts();
+
             $data = [
                 'title' => 'Welcome',
+                'posts' => $posts,
             ];
 
             $this->view('pages/index', $data);
